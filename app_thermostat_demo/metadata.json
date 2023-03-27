@@ -1,6 +1,6 @@
 {
 	"name": "app_thermostat_demo",
 	"note": "This is a demo container to showcase thermostat usage",
-	"source_url": "https://github.com/nmenon/adocker",
+	"source_url": "https://github.com/cshilwant/adocker",
 	"has_web_interface": false
 }
