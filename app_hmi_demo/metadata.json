@@ -1,0 +1,6 @@
+{
+	"name": "app_hmi_demo",
+	"note": "This is a demo container to showcase hmi-demo usage",
+	"source_url": "https://github.com/cshilwant/adocker",
+	"has_web_interface": false
+}
