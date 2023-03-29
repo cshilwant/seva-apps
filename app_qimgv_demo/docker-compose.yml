@@ -1,0 +1,16 @@
+services:
+  app_thermostat_demo:
+    image: ghcr.io/cshilwant/app_qimgv_demo:latest
+    container_name: app_qimgv_demo
+    restart: on-failure:5
+    environment:
+      - XDG_RUNTIME_DIR=/tmp
+      - WAYLAND_DISPLAY=wayland-0
+      - QT_QPA_PLATFORM=wayland
+    volumes:
+      - /tmp/0-runtime-dir/wayland-0:/tmp/wayland-0
+      - /dev/dri:/dev/dri
+      - /dev/pvr_sync:/dev/pvr_sync
+    device_cgroup_rules:
+      - 'c 199:* rmw'
+      - 'c 226:* rmw'
