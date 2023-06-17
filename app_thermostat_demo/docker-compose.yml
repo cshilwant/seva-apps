@@ -4,7 +4,7 @@ services:
     container_name: app_thermostat_demo
     restart: on-failure:5
     environment:
-      - XDG_RUNTIME_DIR=/tmp
+      - XDG_RUNTIME_DIR=/tmp/
       - WAYLAND_DISPLAY=wayland-1
       - QT_QPA_PLATFORM=wayland
     volumes:
